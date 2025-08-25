@@ -36,3 +36,22 @@ For each entry in the help files we need to create a <command_name>.md file in s
 Next we'll compile a comparative feature list across all three implementations and I'll direct comparative studies of how each implemented those systems. 
 
 Finally, we'll explore design patterns and possible implementations.
+
+### Section drafting checklist
+
+When adding a new command section to the cookbook, follow these steps to keep
+examples consistent and well‑researched:
+
+1. **Start from the help file** – review the cleaned TinTin++ help text as the
+   baseline description.
+2. **Search the repository** – use `rg` across `commands/` and the included
+   reference repos to gather diverse syntax examples.
+3. **Filter duplicates** – omit patterns already covered in other sections and
+   highlight novel usage, such as `#line` for one‑shot triggers or PCRE
+   captures.
+4. **Cross‑reference related commands** – link to regex/PCRE documentation or
+   other relevant sections where helpful.
+5. **Show runnable snippets** – prefer examples that can be copy‑pasted into a
+   TinTin++ session without additional context.
+6. **Update the plan and run tests** – mark the command as documented in
+   `COOKBOOK_PLAN.MD` and execute `bash clean_help_files.sh` before committing.

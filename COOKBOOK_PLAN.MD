@@ -16,7 +16,6 @@ Develop a comprehensive reference so an AI agent can script TinTin++ to automate
 
 ## Help File Punchlist
 - action (documented)
-
 - cat (documented)
 - coordinates (documented)
 - echo (documented)
